@@ -14,16 +14,21 @@ nav{
 
 }
 
+a{
+    font-family: 'Brush Script MT', cursive;
+
+}
+
+p{
+    font-family: 'Brush Script MT', cursive;
+}
+
 a.footer-link{
     text-decoration: none;
 }
 
 a.footer-link:hover {
     color: hotpink;
-}
-
-.navbar-brand{
-    /* display: none; */
 }
 
 
@@ -51,7 +56,6 @@ a.footer-link:hover {
 .jumbotron {
     display:flex !important;
     flex-direction: column;
-    background-color: #b80e0e;
     align-items: center;
 }
 
@@ -68,6 +72,12 @@ a.footer-link:hover {
     padding-left: 1em !important;
     margin-bottom: 1em !important;
     
+}
+
+.navbar-brand{
+    margin-right: 0 !important;
+    font-family: Georgia, serif;
+
 }
 
 div.card {
@@ -95,6 +105,12 @@ div.nav-card {
     
 }
 
+div.nav-title{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
 h1.flex{
     text-align: center;
     padding: .5em;
@@ -107,8 +123,21 @@ h1.flex{
 }
 
 h1.header{
+    font-family: Georgia, serif;
     font-weight: bolder;
+    font-size: 7vw;
     margin:1em;
+    text-align: center;    
+
+}
+
+h1.footer-header{
+    font-family: Georgia, serif;
+    font-weight: bolder;
+    font-size: 3vw;
+    margin:1em;
+    margin-top: 0%;
+    text-align: center !important;    
 
 }
 
@@ -173,7 +202,7 @@ h1.footer-text{
     padding:1em;
     border: 2px solid #e39b7d;
     box-shadow: -1px -1px 20px 0px #ffffff;
-    
+    margin-top: 2em;
 }
 
 .footer-item {
@@ -185,6 +214,12 @@ h1.footer-text{
     box-shadow: 2px 2px 5px 2px #000000, -1px -1px 2px 1px #ffffff;
     margin:1em;
     
+}
+
+.footer-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .nav-icons{
     font-size:1.2em;
@@ -210,6 +245,7 @@ h1.footer-text{
 
     }
 
+
 }
   
 /* Large Screens */
@@ -234,7 +270,7 @@ h1.footer-text{
 
 @media screen and (max-width: 991px ) {
     /* Removes jumbotron on small and medium screens */
-    .jumbotron{
+    .jumbotron, .header{
         display:none !important;
     }
 
@@ -247,4 +283,11 @@ h1.footer-text{
         width:25%;
        
     }
+}
+
+@media screen and (min-width: 700px) {
+
+    .footer-group{
+    flex-direction: row;
+}
 }
