@@ -1,0 +1,250 @@
+body, html {
+    height: 100%;
+    background-color: #fceedd !important;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+nav{
+    background-color: #494230;
+
+}
+
+a.footer-link{
+    text-decoration: none;
+}
+
+a.footer-link:hover {
+    color: hotpink;
+}
+
+.navbar-brand{
+    /* display: none; */
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+
+}
+
+/* Left column */
+.left-column {   
+    background-color: #b80e0e;
+    width:100%;
+}
+  
+/* Right column */
+.right-column {
+    background-color: #220eb8;
+    width:100%;
+
+}
+
+.jumbotron {
+    display:flex !important;
+    flex-direction: column;
+    background-color: #b80e0e;
+    align-items: center;
+}
+
+.jumbo-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar-nav {
+    padding-left: 1em !important;
+    margin-bottom: 1em !important;
+    
+}
+
+div.card {
+    background: #6e6460;
+    border: 2px solid #e39b7d;
+    min-height: 350px;
+    max-height: fit-content;
+    padding: 1em;
+    box-shadow: -1px -1px 20px 0px #ffffff;
+    margin:1em;
+    /* width:100% !important; */
+    
+}
+
+div.nav-card {
+    background: #6e6460;
+    border: 2px solid #e39b7d;
+    min-height: 50%;
+    max-height: fit-content;
+    min-width:15%;
+    max-width:fit-content;
+    padding: 1em;
+    box-shadow: -1px -1px 20px 0px #ffffff;
+    margin:1em;
+    
+}
+
+h1.flex{
+    text-align: center;
+    padding: .5em;
+    margin: 1em 1em;
+    font-size:medium !important;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bolder;
+    color:#e39b7d;
+    text-shadow: 2px 2px 5px rgb(7, 7, 7);
+}
+
+h1.header{
+    font-weight: bolder;
+    margin:1em;
+
+}
+
+h1.footer-text{
+    font-size:xx-large !important;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+/* Accordion */
+.accordion {
+    background-color: #BCBFA3;
+    color: #6e6460;
+    cursor: pointer;
+    padding: 18px;
+    align-self: center;
+    text-align: center;
+    outline: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: 0.4s;
+    border-style:double;
+    border-color: #E8D3A9;
+    border-radius: .25em;
+    box-shadow: 2px 2px 5px 2px #000000, -1px -1px 2px 1px #ffffff;
+   
+  }
+  
+  .active, .accordion:hover {
+    background-color: #6e6460;
+    color:#E8D3A9;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    font-weight: bolder;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding:0em 2em;
+    background-color:#6e6460;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+
+
+.footer {
+    display: flex;
+    justify-content:space-evenly;
+    background-color:#6e6460;
+    color: #E8D3A9;
+    flex-direction: column;
+    padding:1em;
+    border: 2px solid #e39b7d;
+    box-shadow: -1px -1px 20px 0px #ffffff;
+    
+}
+
+.footer-item {
+    background: #BCBFA3;
+    border-style:double;
+    border-color: #E8D3A9;
+    border-radius: .25em;
+    color: #6e6460;
+    box-shadow: 2px 2px 5px 2px #000000, -1px -1px 2px 1px #ffffff;
+    margin:1em;
+    
+}
+.nav-icons{
+    font-size:1.2em;
+    text-align: center;
+    
+}
+
+.nav-icons:hover {
+    color: hotpink;
+  }
+
+
+/* Make the page responsive */
+/* Medium Screens */
+@media screen and (min-width: 500px) {
+    
+   div.card{
+    width:44%;
+   }
+
+   .flex-container {
+        flex-flow: row wrap;
+
+    }
+
+}
+  
+/* Large Screens */
+@media screen and (min-width: 992px) {
+    
+    div.card{
+        width:44%;
+    }
+   
+    .flex-container {
+        justify-content: space-between;
+    }  
+
+    .navbar{
+        display:none;
+    }
+
+    nav {
+        display:none !important;
+    }
+}
+
+@media screen and (max-width: 991px ) {
+    /* Removes jumbotron on small and medium screens */
+    .jumbotron{
+        display:none !important;
+    }
+
+}
+
+/* Extra Large Screens */
+@media screen and (min-width: 1200px) {
+    
+    div.card{
+        width:25%;
+       
+    }
+}
