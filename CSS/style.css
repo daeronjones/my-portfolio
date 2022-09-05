@@ -50,10 +50,11 @@ h1.flex{
     text-align: center;
     padding: .5em;
     margin: 1em 1em;
-    font-size:medium !important;
+    font-size: large !important;
     font-family: Verdana, sans-serif;
     font-weight: bolder;
     color:#383622f3;
+    letter-spacing: .3em;
     
 }
 
