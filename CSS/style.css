@@ -168,8 +168,8 @@ div.card {
 
 /* Accordion */
 .accordion {
-    background-color: #3f3f3ff3;
-    color: #cccbcb;
+    background-color: #cccbcb;
+    color: #3f3f3ff3;
     cursor: pointer;
     padding: 18px;
     align-self: center;
@@ -180,15 +180,15 @@ div.card {
     transition: 0.4s;
     border-style:double;
     border-color: rgb(23, 224, 1);
-    border-radius: .25em;
+    border-radius: .5em;
     box-shadow: 2px 2px 5px 2px #000000, -1px -1px 2px 1px #ffffff;
     margin:.2em;
    
   }
   
   .active, .accordion:hover {
-    background-color: #6e6460;
-    color:#E8D3A9;
+    background-color: #3f3f3ff3;
+    color:#cccbcb;
   }
   
   .accordion:after {
