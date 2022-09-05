@@ -28,7 +28,12 @@ a{
 
 a.footer-link{
     text-decoration: none;
-    color:#7c7c7c
+    color:#afadad
+}
+
+a.header-link{
+    text-decoration: none;
+    color:#3f3f3f
 }
 
 a.footer-link:hover {
@@ -210,7 +215,8 @@ background-color:#3f3f3ff3;
 max-height: 0;
 overflow: hidden;
 transition: max-height 0.2s ease-out;
-margin-top: 1em;
+margin: 1em 0em;
+border-radius: .5em;
 }
 
 /* Form styling */
