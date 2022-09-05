@@ -205,7 +205,7 @@ div.card {
   
   .panel {
     padding:0em 2em;
-    background-color:#6e6460;
+    background-color:#3f3f3ff3;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -242,6 +242,23 @@ div.card {
     flex-direction: column;
     justify-content: space-around;
 }
+
+ /* Form styling */
+ .form-label{
+    font-size:1.25em !important;
+    font-weight: bold;
+    color:#cccbcb;
+    font-family: 'Pangolin', cursive;
+    
+
+  }
+
+  .form-text{
+    color:#ffffff !important;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+
+  }
 
 
 /* Make the page responsive */
@@ -298,5 +315,12 @@ div.card {
 
     .footer-group{
     flex-direction: row;
+    }
 }
+
+@media only screen and (orientation: landscape) {
+
+    body {
+      background-color: #9f9f9f;
+    }
 }

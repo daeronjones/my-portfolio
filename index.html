@@ -217,6 +217,95 @@
                         PHONE: 1+ 716 424 8085
                     </p>
                 </div>
+
+                <button class="accordion">Book Me</button>
+
+                <div class="panel">
+
+                    <br>
+                    <form autocomplete="on">
+    
+                        <label for="fname" class="form-label">First name</label>
+
+                        <input 
+                        type="text" 
+                        class="form-control" 
+                        id="fname" 
+                        name="fname"
+                        required>
+                        <br><br>
+            
+            
+
+                        <label for="lname" class="form-label">Last name</label>
+            
+                        <input 
+                        type="text" 
+                        class="form-control" 
+                        id="lname" 
+                        name="lname"
+                        required>
+                        <br><br>
+        
+            
+            
+                        <label for="phone" class="form-label">Phone number</label>
+                        
+                        <input type="tel" 
+                        class="form-control" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="716-123-4567"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" aria-describedby="telHelp"
+                        required>
+
+                        <div id="telHelp" class="form-text">We'll never share your number with anyone else.</div>
+                        <br><br>
+            
+            
+                        
+                        <label for="email" class="form-label">Email address</label>
+            
+                        <input type="email" class="form-control" 
+                        id="email" 
+                        name="email"
+                        placeholder="abc@email.com" aria-describedby="emailHelp"
+                        required>
+
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <br><br>
+            
+
+                        
+                        <label for="services" class="form-label">Choose a service:</label>
+
+                        <select id="services" name="services">
+
+                            <option value="website">Website</option>
+
+                            <option value="landscape">Landscape</option>
+
+                            <option value="remodel">Remodel</option>
+
+                            <option value="vehicle repair">Vehicle Repair</option>
+
+                        </select>
+                        <br><br>
+
+                        <label for="favcolor" class="form-label">Select your favorite color:</label>
+
+                        <input 
+                        type="color" 
+                        id="favcolor" 
+                        name="favcolor" 
+                        value="#ff0000">
+                        <br><br>
+            
+                        <button type="submit" class="btn btn-primary">Submit</button>
+
+                        <button type="reset" class="btn btn-primary">Reset</button><br><br>
+                    </form>
+                </div>
                 
             </div>
         </div>
