@@ -37,6 +37,7 @@ a.footer-link:hover {
 
 p{
     font-family: Verdana, sans-serif;
+    color: #cbcccb;
 
 }
 
@@ -185,33 +186,49 @@ div.card {
     box-shadow: 2px 2px 5px 2px #000000, -1px -1px 2px 1px #ffffff;
     margin:.2em;
    
-  }
-  
-  .active, .accordion:hover {
-    background-color: #3f3f3ff3;
-    color:#cccbcb;
-  }
-  
-  .accordion:after {
-    content: '\002B';
-    font-weight: bolder;
-    float: right;
-    margin-left: 5px;
-  }
-  
-  .active:after {
-    content: "\2212";
-  }
-  
-  .panel {
-    padding:0em 2em;
-    background-color:#3f3f3ff3;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    margin-top: 1em;
-  }
+}
 
+.active, .accordion:hover {
+background-color: #3f3f3ff3;
+color:#cccbcb;
+}
+
+.accordion:after {
+content: '\002B';
+font-weight: bolder;
+float: right;
+margin-left: 5px;
+}
+
+.active:after {
+content: "\2212";
+}
+
+.panel {
+padding:0em 2em;
+background-color:#3f3f3ff3;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+margin-top: 1em;
+}
+
+/* Form styling */
+.form-label{
+font-size:1.25em !important;
+font-weight: bold;
+color:#cccbcb;
+font-family: 'Pangolin', cursive;
+
+
+}
+
+.form-text{
+color:#38d707 !important;
+font-weight: 600;
+font-family: 'Ubuntu', sans-serif;
+
+}
 
 
 .footer {
@@ -242,23 +259,6 @@ div.card {
     flex-direction: column;
     justify-content: space-around;
 }
-
- /* Form styling */
- .form-label{
-    font-size:1.25em !important;
-    font-weight: bold;
-    color:#cccbcb;
-    font-family: 'Pangolin', cursive;
-    
-
-  }
-
-  .form-text{
-    color:#ffffff !important;
-    font-weight: 600;
-    font-family: 'Ubuntu', sans-serif;
-
-  }
 
 
 /* Make the page responsive */
