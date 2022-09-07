@@ -40,6 +40,12 @@ a.footer-link:hover {
     color: rgb(23, 224, 1);
 }
 
+a.download-link{
+    text-decoration: none;
+    color:#afadad;
+    size: .2em;
+}
+
 p{
     font-family: Verdana, sans-serif;
     color: #cbcccb;
@@ -48,7 +54,7 @@ p{
 
 h5{
     font-family: Verdana, sans-serif;
-    color: #cccbcb
+    color: #cccbcb;
     
 }
 
@@ -89,6 +95,17 @@ h1.footer-text{
     font-weight: bolder;
     text-align: center;
 
+}
+
+.w3-btn{
+    background-color:#cbcccb !important;
+    border-radius: 1em;
+    font-weight: bold;
+}
+
+.w3-btn:hover {
+    background-color:#a7a8a7 !important;
+    color: #000000;
 }
 
 .flex-container {
@@ -196,6 +213,7 @@ div.card {
 .active, .accordion:hover {
 background-color: #3f3f3ff3;
 color:#cccbcb;
+box-shadow: 2px 2px 5px 2px #ffffff, -1px -1px 2px 1px #000000;
 }
 
 .accordion:after {
