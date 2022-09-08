@@ -101,6 +101,8 @@ h1.footer-text{
     background-color:#cbcccb !important;
     border-radius: 1em;
     font-weight: bold;
+    width: 100%;
+    
 }
 
 .w3-btn:hover {
