@@ -28,7 +28,8 @@ a{
 
 a.footer-link{
     text-decoration: none;
-    color:#afadad
+    color:#afadad;
+    
 }
 
 a.header-link{
@@ -49,6 +50,7 @@ a.download-link{
 p{
     font-family: Verdana, sans-serif;
     color: #cbcccb;
+    font-size: 2vw;
 
 }
 
@@ -62,7 +64,7 @@ h1.flex{
     text-align: center;
     padding: .5em;
     margin: 1em 1em;
-    font-size: large !important;
+    font-size: 2vw;
     font-family: Verdana, sans-serif;
     font-weight: bolder;
     color:#383622f3;
@@ -100,8 +102,8 @@ h1.footer-text{
 .w3-btn{
     background-color:#cbcccb !important;
     border-radius: 1em;
-    font-weight: bold;
     width: 100%;
+    font-size: 1.5vw;
     
 }
 
@@ -197,12 +199,11 @@ div.card {
     background-color: #cccbcb;
     color: #3f3f3ff3;
     cursor: pointer;
-    padding: 18px;
+    padding: 30px;
     align-self: center;
     text-align: center;
     outline: none;
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 2vw;
     transition: 0.4s;
     border-style:double;
     border-color: rgb(23, 224, 1);
@@ -324,6 +325,18 @@ font-family: 'Ubuntu', sans-serif;
     /* Removes jumbotron on small and medium screens */
     .jumbotron, .header{
         display:none !important;
+    }
+
+}
+
+@media screen and (max-width: 500px ) {
+    /* Adds responsiveness to the navbar text on small screens*/
+    .navbar-brand, h5{
+        font-size: 4vw !important;
+    }
+
+    a.footer-link{
+        font-size: 3vw;
     }
 
 }
