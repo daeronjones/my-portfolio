@@ -52,7 +52,7 @@ a.download-link{
 p{
     font-family: Verdana, sans-serif;
     color: #cbcccb;
-    font-size: 2vw;
+    font-size: 2.5vw;
 
 }
 
@@ -351,6 +351,10 @@ font-family: 'Ubuntu', sans-serif;
 
     a, a.footer-link{
         font-size: 2.5vw;
+    }
+
+    .w3-btn{
+        font-size: 2vw;
     }
 
 }
