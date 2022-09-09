@@ -22,14 +22,14 @@ nav{
 
 a{
     font-family: Verdana, sans-serif;
-    font-size: 1.5vw;
+    font-size: 5vw;
 
 }
 
 a.footer-link{
     text-decoration: none;
     color:#afadad;
-    font-size: 1.5vw;
+    font-size: 3.5vw;
 
     
 }
@@ -39,24 +39,20 @@ a.header-link{
     color:#3f3f3f
 }
 
-a.footer-link:hover {
+a:hover, a.header-link:hover, a.footer-link:hover {
     color: rgb(23, 224, 1);
 }
 
-a.download-link{
-    text-decoration: none;
-    color:#afadad;
-    size: .2em;
-}
+
 
 p{
     font-family: Verdana, sans-serif;
     color: #cbcccb;
-    font-size: 2.5vw;
+    font-size: 4vw;
 
 }
 
-h5{
+h3{
     font-family: Verdana, sans-serif;
     color: #cccbcb;
     
@@ -66,7 +62,7 @@ h1.flex{
     text-align: center;
     padding: .5em;
     margin: 1em 1em;
-    font-size: 2.5vw;
+    font-size: 5vw;
     font-family: Verdana, sans-serif;
     font-weight: bolder;
     color:#383622f3;
@@ -86,13 +82,13 @@ h1.header{
 
 h1.footer-header{
     font-family: 'Holtwood One SC', serif;
-    font-weight: bolder;
-    font-size: 3vw;
+    font-size: 5vw;
     margin:1em;
     margin-top: 0%;
     text-align: center !important;    
     color:#fff;
 }
+
 
 h1.footer-text{
     font-size:xx-large !important;
@@ -103,9 +99,12 @@ h1.footer-text{
 
 .w3-btn{
     background-color:#cbcccb !important;
-    border-radius: 1em;
+    border-radius: 3em;
     width: 100%;
-    font-size: 1.5vw;
+    font-size: 4vw !important;
+    font-weight:bolder;
+    padding:2em !important;
+    
     
 }
 
@@ -138,6 +137,9 @@ h1.footer-text{
     text-align: center;
 }
 
+.nav-link{
+    padding:0em 3em !important;
+}
 .navbar-nav {
     padding-left: 1em !important;
     margin-bottom: 1em !important;
@@ -147,6 +149,7 @@ h1.footer-text{
 .navbar-brand{
     margin-right: 0 !important;
     font-family: 'Holtwood One SC', serif;
+    font-size: 5vw !important;
 
 }
 
@@ -201,11 +204,11 @@ div.card {
     background-color: #cccbcb;
     color: #3f3f3ff3;
     cursor: pointer;
-    padding: 30px;
+    padding: 1.5rem 5rem;
     align-self: center;
     text-align: center;
     outline: none;
-    font-size: 3vw;
+    font-size: 5vw;
     transition: 0.4s;
     border-style:double;
     border-color: rgb(23, 224, 1);
@@ -245,16 +248,15 @@ border-radius: .5em;
 /* Form styling */
 .form-label{
 font-size:1.25em !important;
-font-weight: bold;
+
 color:#cccbcb;
-font-family: 'Pangolin', cursive;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
 
 
 }
 
 .form-text{
 color:#38d707 !important;
-font-weight: 600;
 font-family: 'Ubuntu', sans-serif;
 
 }
@@ -345,13 +347,13 @@ font-family: 'Ubuntu', sans-serif;
 
 @media screen and (max-width: 500px ) {
     /* Adds responsiveness to the navbar text on small screens*/
-    .navbar-brand, h5{
+    /* .navbar-brand, h5{
         font-size: 4vw !important;
-    }
+    } */
 
-    a, a.footer-link{
+    /* a, a.footer-link{
         font-size: 2.5vw;
-    }
+    } */
 
     .w3-btn{
         font-size: 2vw;
@@ -374,7 +376,7 @@ font-family: 'Ubuntu', sans-serif;
     flex-direction: row;
     }
 
-    h5{
+    h3{
         text-align: center;
     }
 }
