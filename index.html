@@ -43,7 +43,7 @@
               
 
               <!-- Menu Button -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
 
@@ -66,7 +66,29 @@
                     </ul>
 
                    
-               </div>
+               </div> -->
+
+                            <!-- The overlay -->
+            <div id="overNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <a class="nav-link" href="#about" title="About Section"><i class="fa-solid fa-address-card"></i> About</a>
+
+                    <a class="nav-link" href="#services" title="Contact Section"><i class="fa-solid fa-phone-flip"></i> Services</a>
+
+                <a class="nav-link" href="#work" title="Work Section"><i class="fa-solid fa-briefcase"></i> Work</a> 
+
+                <a class="nav-link" href="#contact" title="Contact Section"><i class="fa-solid fa-phone-flip"></i> Contact</a>
+                </div>
+            
+            </div>
+            
+            <!-- Use any element to open/show the overlay navigation menu -->
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
             </div>
 
@@ -80,21 +102,6 @@
             <br>
             <br>
 
-        <!-- <div class="flex-container">
-            <div class="left-column">
-                <h1>About Me</h1>
-            </div>
-            <div class="right-column">
-                <h1>My Work</h1>
-            </div>
-            <div class="left-column">
-                <h1>About Me</h1>
-            </div>
-            <div class="right-column">
-                <h1>Contact</h1>
-            </div>
-
-        </div> -->
 
         <div class="jumbotron">
 
@@ -157,6 +164,27 @@
 
             </div>
 
+            <div class="card" id="services">
+
+                <h1 class="flex ">SERVICES</h1>
+
+                <button class="accordion">IDK yet</button>
+
+                <div class="panel">
+
+                    <br>
+                    <p>
+                        Self motivated person with a mind full of creativity. My passion lies in using my knowledge to help others. My time consists of designing websites, gaming, landscaping, carpentry, horticulture, and raising my two little girls. <br><br> I have a Bachelors of Science degree from Hilbert College, where I studied cybersecurity. <br><br> Hopefully we can work together in the future.
+                    </p>
+                </div>
+                
+            </div>
+
+            
+        </div>
+
+        <div class="flex-container">
+           
             <div class="card" id="work">
 
                 <h1 class="flex">MY WORK</h1>
@@ -200,24 +228,6 @@
                 </div>
 
                
-                
-            </div>
-        </div>
-
-        <div class="flex-container">
-            <div class="card" id="other">
-
-                <h1 class="flex ">SOMETHING ELSE</h1>
-
-                <button class="accordion">IDK yet</button>
-
-                <div class="panel">
-
-                    <br>
-                    <p>
-                        Self motivated person with a mind full of creativity. My passion lies in using my knowledge to help others. My time consists of designing websites, gaming, landscaping, carpentry, horticulture, and raising my two little girls. <br><br> I have a Bachelors of Science degree from Hilbert College, where I studied cybersecurity. <br><br> Hopefully we can work together in the future.
-                    </p>
-                </div>
                 
             </div>
 
@@ -376,24 +386,6 @@
             </ul>
         </div>
 
-        <!-- Javascript -->
-        <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-            
-            for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) {
-                        panel.style.maxHeight = null;
-                    } 
-                    else {
-                        panel.style.maxHeight = panel.scrollHeight + "px";
-                    } 
-                });
-            }
-        </script>
         
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
