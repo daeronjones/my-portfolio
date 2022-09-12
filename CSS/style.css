@@ -40,7 +40,7 @@ a.header-link{
 }
 
 a:hover, a.header-link:hover, a.footer-link:hover {
-    color: rgb(23, 224, 1);
+    color: #ffffff;
 }
 
 
@@ -99,7 +99,7 @@ h1.footer-text{
 
 .w3-btn{
     background-color:#cbcccb !important;
-    border-radius: 3em;
+    border-radius: 1em;
     width: 100%;
     font-size: 4vw !important;
     font-weight:bolder;
