@@ -29,7 +29,7 @@ a{
 a.footer-link{
     text-decoration: none;
     color:#afadad;
-    font-size: 3.5vw;
+    font-size: 3vw;
 
     
 }
@@ -45,16 +45,16 @@ a:hover, a.header-link:hover, a.footer-link:hover {
 
 
 
-p{
+p.accordion-text{
     font-family: Verdana, sans-serif;
     color: #cbcccb;
     font-size: 4vw;
 
 }
 
-h3{
+h3.nav-foot-title{
     font-family: Verdana, sans-serif;
-    color: #cccbcb;
+    color: #a0da8ec0;
     
 }
 
@@ -97,13 +97,33 @@ h1.footer-text{
 
 }
 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 1em;
+    right: 1.2em;
+    z-index: 99;
+    font-size: 2.5vw;
+    border: none;
+    outline: none;
+    background-color: #a0da8ec0;
+    color: white;
+    cursor: pointer;
+    padding: 1em;
+    border-radius: .5em;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
 .w3-btn{
     background-color:#cbcccb !important;
     border-radius: 1em;
     width: 100%;
     font-size: 4vw !important;
     font-weight:bolder;
-    padding:2em !important;
+    padding:1em !important;
     
     
 }
@@ -117,7 +137,7 @@ h1.footer-text{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
+    margin-top:10%;
 
 }
 
@@ -164,7 +184,7 @@ h1.footer-text{
 }
 
 .nav-icons:hover {
-    color: rgb(23, 224, 1);
+    color: rgb(23, 224, 1) !important;
 }
 
 
@@ -190,6 +210,20 @@ h1.footer-text{
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   }
+
+  .form-overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
   
   /* Position the content inside the overlay */
   .overlay-content {
@@ -199,9 +233,19 @@ h1.footer-text{
     text-align: center; /* Centered text/links */
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
   }
+
+    /* Position the content inside the overlay */
+    .form-overlay-content {
+        display:flex;
+        position: relative;
+        top: 25%; /* 25% from the top */
+        width: 100%; /* 100% width */
+        justify-content: center;
+        margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+      }
   
   /* The navigation links inside the overlay */
-  .overlay a {
+  .overlay a, .form-overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
@@ -211,17 +255,21 @@ h1.footer-text{
   }
   
   /* When you mouse over the navigation links, change their color */
-  .overlay a:hover, .overlay a:focus {
+  .overlay a:hover, .overlay a:focus, .form-overlay a:hover, .form-overlay a:focus{
     color: #f1f1f1;
   }
+
+  
   
   /* Position the close button (top right corner) */
-  .overlay .closebtn {
+  .overlay .closebtn, .form-overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    top: 1.3em;
+    right: .5em;
+    font-size: 5em;
   }
+
+
   
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
   @media screen and (max-height: 450px) {
@@ -279,14 +327,32 @@ div.card {
     background-color: #cccbcb;
     color: #3f3f3ff3;
     cursor: pointer;
-    padding: 1.5rem 5rem;
+    padding: 1.5rem 3rem;
+    align-self: center;
+    text-align: center;
+    outline: none;
+    font-size: 5vw;
+    transition: 0.4s;
+    border-color: #a0da8ec0;
+    border-radius: .5em;
+    box-shadow: 2px 2px 5px 2px #000000, -1px -1px 2px 1px #ffffff;
+    margin:.2em;
+   
+}
+
+
+.contactButton {
+    background-color: #cccbcb;
+    color: #3f3f3ff3;
+    cursor: pointer;
+    padding: 1.5rem 3rem;
     align-self: center;
     text-align: center;
     outline: none;
     font-size: 5vw;
     transition: 0.4s;
     border-style:double;
-    border-color: rgb(23, 224, 1);
+    border-color: #a0da8ec0;
     border-radius: .5em;
     box-shadow: 2px 2px 5px 2px #000000, -1px -1px 2px 1px #ffffff;
     margin:.2em;
@@ -331,7 +397,7 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .form-text{
-color:#38d707 !important;
+color:#a0da8ec0 !important;
 font-family: 'Ubuntu', sans-serif;
 
 }
@@ -374,12 +440,45 @@ font-family: 'Ubuntu', sans-serif;
    div.card{
     width:44%;
    }
-/* 
+
    .flex-container {
         flex-flow: row wrap;
 
-    } */
+    }
 
+    h1.flex{
+        font-size: 3vw;
+    }
+
+    .accordion, .contactButton{
+        font-size: 3vw;
+        padding:1rem 2rem;
+    }
+
+    #myBtn{
+        font-size: 2vw;
+   
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+    .footer-group{
+    flex-direction: row;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+    a.footer-link{
+        font-size: 2.5vw;
+    }
+
+    #myBtn{
+        font-size: 1.5vw;
+   
+    }
 
 }
   
@@ -387,28 +486,33 @@ font-family: 'Ubuntu', sans-serif;
 @media screen and (min-width: 992px) {
     
     div.card{
-        width:44%;
+        width:40%;
     }
    
-    /* .flex-container {
+    .flex-container {
         justify-content: space-between;
-    }
+    } 
     
     div.nav-title{
-        display:none !important;
+        display:none;
     }
 
-    .accordion{
+    .accordion, .contactButton{
         font-size: 2vw;
     }
 
-    .h1.flex{
-        font-size: 1.5vw;
+    h1.flex{
+        font-size: 2vw;
     }
 
     a, a.footer-link{
-        font-size: 1.2vw;
-    } */
+        font-size: 1.5vw;
+    }
+
+    #myBtn{
+        font-size: 1vw;
+   
+    }
 
 }
 
@@ -431,37 +535,12 @@ font-family: 'Ubuntu', sans-serif;
 
 @media screen and (max-width: 500px ) {
     /* Adds responsiveness to the navbar text on small screens*/
-    /* .navbar-brand, h5{
+    .navbar-brand, h3.nav-foot-title, h1.footer-header{
         font-size: 4vw !important;
-    } */
-
-    /* a, a.footer-link{
-        font-size: 2.5vw;
-    } */
-
-    .w3-btn{
-        font-size: 2vw;
     }
 
 }
 
-@media screen and (min-width: 700px) {
-
-    .footer-group{
-    flex-direction: row;
-    }
-
-    h3{
-        text-align: center;
-    }
-}
-
-/* @media screen and (max-width: 700px) {
-
-    a, a.footer-link{
-        font-size: 2vw;
-    }
-} */
 
 @media only screen and (orientation: landscape) {
 

@@ -38,7 +38,7 @@
         
               <div class="nav-title">
                 <a class="navbar-brand">Daeron Jones</a>
-                <h3>Web Designer</h3>
+                <h3 class="nav-foot-title">Web Designer</h3>
               </div>
               
 
@@ -115,6 +115,7 @@
 
             <div class="nav-card">
 
+                
                 <h1 class="header ">Daeron Jones</h1>
                     <ul class="jumbo-nav">
 
@@ -135,6 +136,7 @@
 
         </div>
 
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
         <div class="flex-container">
             
@@ -147,7 +149,7 @@
                 <div class="panel">
 
                     <br>
-                    <p>
+                    <p class="accordion-text">
                         Building a community through creativity. My passion lies in using my knowledge to help others. My time consists of designing websites, gaming, landscaping, carpentry, horticulture, and raising my two little girls. <br><br> I have a Bachelors of Science degree from Hilbert College, where I studied cybersecurity. <br><br> Hopefully we can work together in the future.
                     </p>
                 </div>
@@ -157,7 +159,7 @@
                 <div class="panel">
 
                     <br>
-                    <h3>
+                    <h3 class="nav-foot-title">
                         Click the button to download.
                     </h3>
 
@@ -181,7 +183,7 @@
                 <div class="panel">
 
                     <br>
-                    <p>
+                    <p class="accordion-text">
                         Self motivated person with a mind full of creativity. My passion lies in using my knowledge to help others. My time consists of designing websites, gaming, landscaping, carpentry, horticulture, and raising my two little girls. <br><br> I have a Bachelors of Science degree from Hilbert College, where I studied cybersecurity. <br><br> Hopefully we can work together in the future.
                     </p>
                 </div>
@@ -202,7 +204,7 @@
                 <div class="panel">
 
                     <br>
-                    <h3>
+                    <h3 class="nav-foot-title">
                         Click the button to visit the website.
                     </h3>
 
@@ -248,7 +250,7 @@
                 <div class="panel">
 
                     <br>
-                    <h3>
+                    <h3 class="nav-foot-title">
                         Email: <br><a class="footer-link" href="mailto:daeronjones@gmail.com" target="_blank"> daeronjones@gmail.com</a>
 
                         <br>
@@ -262,97 +264,116 @@
 
                 </div>
 
-                <button class="accordion">Book Me</button>
+                
+                
+                                  <!-- The overlay -->
+            <div id="contactForm" class="form-overlay">
 
-                <div class="panel">
-
-                    <br>
-                    <form autocomplete="on">
-    
-                        <label for="fname" class="form-label">First name</label>
-
-                        <input 
-                        type="text" 
-                        class="form-control" 
-                        id="fname" 
-                        name="fname"
-                        required>
-                        <br><br>
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeForm()">&times;</a>
             
-            
+                <!-- Overlay content -->
+                <div class="form-overlay-content">
+                   
 
-                        <label for="lname" class="form-label">Last name</label>
-            
-                        <input 
-                        type="text" 
-                        class="form-control" 
-                        id="lname" 
-                        name="lname"
-                        required>
-                        <br><br>
+                        <br>
+                        <form autocomplete="on">
         
+                            <label for="fname" class="form-label">First name</label>
+    
+                            <input 
+                            type="text" 
+                            class="form-control" 
+                            id="fname" 
+                            name="fname"
+                            required>
+                            <br><br>
+                
+                
+    
+                            <label for="lname" class="form-label">Last name</label>
+                
+                            <input 
+                            type="text" 
+                            class="form-control" 
+                            id="lname" 
+                            name="lname"
+                            required>
+                            <br><br>
             
+                
+                
+                            <label for="phone" class="form-label">Phone number</label>
+                            
+                            <input type="tel" 
+                            class="form-control" 
+                            id="phone" 
+                            name="phone" 
+                            placeholder="716-123-4567"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" aria-describedby="telHelp"
+                            required>
+    
+                            <div id="telHelp" class="form-text">We'll never share your number with anyone else.</div>
+                            <br><br>
+                
+                
+                            
+                            <label for="email" class="form-label">Email address</label>
+                
+                            <input type="email" class="form-control" 
+                            id="email" 
+                            name="email"
+                            placeholder="abc@email.com" aria-describedby="emailHelp"
+                            required>
+    
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            <br><br>
+                
+    
+                            
+                            <label for="services" class="form-label">Choose a service:</label>
+    
+                            <select id="services" name="services">
+    
+                                <option value="website">Website</option>
+    
+                                <option value="landscape">Landscape</option>
+    
+                                <option value="remodel">Remodel</option>
+    
+                                <option value="vehicle repair">Vehicle Repair</option>
+    
+                            </select>
+                            <br><br>
+    
+                            <label for="favcolor" class="form-label">Select your favorite color:</label>
+    
+                            <input 
+                            type="color" 
+                            id="favcolor" 
+                            name="favcolor" 
+                            value="#38d707">
+                            <br><br>
+                
+                            <button type="submit" class="btn btn-primary">Submit</button>
+    
+                            <button type="reset" class="btn btn-primary">Reset</button><br><br>
+                        </form>
+                    
             
-                        <label for="phone" class="form-label">Phone number</label>
-                        
-                        <input type="tel" 
-                        class="form-control" 
-                        id="phone" 
-                        name="phone" 
-                        placeholder="716-123-4567"
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" aria-describedby="telHelp"
-                        required>
-
-                        <div id="telHelp" class="form-text">We'll never share your number with anyone else.</div>
-                        <br><br>
-            
-            
-                        
-                        <label for="email" class="form-label">Email address</label>
-            
-                        <input type="email" class="form-control" 
-                        id="email" 
-                        name="email"
-                        placeholder="abc@email.com" aria-describedby="emailHelp"
-                        required>
-
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        <br><br>
-            
-
-                        
-                        <label for="services" class="form-label">Choose a service:</label>
-
-                        <select id="services" name="services">
-
-                            <option value="website">Website</option>
-
-                            <option value="landscape">Landscape</option>
-
-                            <option value="remodel">Remodel</option>
-
-                            <option value="vehicle repair">Vehicle Repair</option>
-
-                        </select>
-                        <br><br>
-
-                        <label for="favcolor" class="form-label">Select your favorite color:</label>
-
-                        <input 
-                        type="color" 
-                        id="favcolor" 
-                        name="favcolor" 
-                        value="#38d707">
-                        <br><br>
-            
-                        <button type="submit" class="btn btn-primary">Submit</button>
-
-                        <button type="reset" class="btn btn-primary">Reset</button><br><br>
-                    </form>
                 </div>
+            
+            </div>
+                 <!-- Use any element to open/show the overlay navigation menu -->
+            <span class="contactButton" style="cursor:pointer" onclick="openForm()">Book Me</span>
+
+                
                 
             </div>
         </div>
+            </div>
+          
+        
         
         <div class="footer container-fluid">
 
@@ -360,7 +381,7 @@
 
             <div class="footer-group">
                 <div>
-                    <h3>Contact</h3>
+                    <h3 class="nav-foot-title">Contact</h3>
 
                     <a class="footer-link" href="mailto:daeronjones@gmail.com" target="_blank"> daeronjones@gmail.com</a>
 
@@ -373,7 +394,7 @@
                 <br>
 
                 <div>
-                    <h3>Location</h3>
+                    <h3 class="nav-foot-title">Location</h3>
 
                     <a class="footer-link"  href="http://www.facebook.com" target="_blank">Western, NY 14215</a>
                     
