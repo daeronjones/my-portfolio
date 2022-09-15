@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <script src="https://kit.fontawesome.com/4d94cdd723.js" crossorigin="anonymous"></script>
+
+        <script src="./JS/script.js" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Caveat:wght@700&family=Handlee&family=Holtwood+One+SC&family=Kaushan+Script&family=Love+Ya+Like+A+Sister&family=PT+Sans+Narrow&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pangolin&family=Playfair+Display:ital@1&family=Rancho&family=Rock+Salt&family=Rubik+Mono+One&family=Rye&family=Source+Serif+Pro&family=Ubuntu:ital@0;1&family=Vidaloka&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+
+        <title>DJ</title>
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+            <div class="container-fluid">
+        
+              <!-- Navigation -->
+              <a class="navbar-brand" href="index.html">
+                <img src="./IMG/icons/Banana-Gray.png" alt="bananas" width="50" height="44"
+                    class="d-inline-block align-text-center">
+              </a>
+        
+              <div class="nav-title">
+                <a class="navbar-brand">Daeron Jones</a>
+                <h3 class="nav-foot-title">Web Designer</h3>
+              </div>
+              
+
+              <!-- Menu Button -->
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" title="About Section"><i class="fa-solid fa-address-card"></i> About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work" title="Work Section"><i class="fa-solid fa-briefcase"></i> Work</a>          
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" title="Contact Section"><i class="fa-solid fa-phone-flip"></i> Contact</a>          
+                        </li> 
+
+                    </ul>
+
+                   
+               </div> -->
+
+                            <!-- The overlay -->
+            <div id="overNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <a class="nav-link" href="./about.html" title="About Section"> About</a>
+
+                    <br>
+
+                    <a class="nav-link" href="./services.html" title="Contact Section"> Services</a>
+
+                    <br>
+
+                    <a class="nav-link" href="./work.html" title="Work Section"> Work</a> 
+
+                    <br>
+
+                    <a class="nav-link" href="./contact.html" title="Contact Section"> Contact</a>
+
+            
+                </div>
+            
+            </div>
+            
+            <!-- Use any element to open/show the overlay navigation menu -->
+            <span style="font-size:30px;cursor:pointer;color:#cbcccb" onclick="openNav()">&#9776;</span>
+
+            </div>
+
+            
+        </nav>
+
+        
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <br>
+        <br>
+
+        <a class="w3-btn" href="./IMG/Resume_DJ.pdf" download="Daeron-Jones-Resume" style="width:100%"><i class="fa fa-download"></i> My Resume</a>
+
+                       <!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+    
+      <!-- Left Column -->
+      <div class="w3-third">
+      
+        <div class="w3-white w3-text-grey w3-card-4">
+          <div class="w3-display-container">
+            <img src="./IMG/WebPhoto-removebg-copy.png" style="width:100%" alt="Avatar">
+            <div class="w3-display-bottomleft w3-container w3-text-black">
+              <h2>Jane Doe</h2>
+            </div>
+          </div>
+          <div class="w3-container">
+            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p>
+            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ex@mail.com</p>
+            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
+            <hr>
+  
+            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+            <p>Adobe Photoshop</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+            </div>
+            <p>Photography</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+                <div class="w3-center w3-text-white">80%</div>
+              </div>
+            </div>
+            <p>Illustrator</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+            </div>
+            <p>Media</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+            </div>
+            <br>
+  
+            <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+            <p>English</p>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+            </div>
+            <p>Spanish</p>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+            </div>
+            <p>German</p>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
+            </div>
+            <br>
+          </div>
+        </div><br>
+  
+      <!-- End Left Column -->
+      </div>
+  
+      <!-- Right Column -->
+      <div class="w3-twothird">
+      
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+            <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+            <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+          </div>
+        </div>
+  
+        <div class="w3-container w3-card w3-white">
+          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+            <p>Web Development! All I need to know in one place</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>London Business School</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+            <p>Master Degree</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>School of Coding</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
+            <p>Bachelor Degree</p><br>
+          </div>
+        </div>
+  
+      <!-- End Right Column -->
+      </div>
+      
+    <!-- End Grid -->
+    </div>
+    
+    <!-- End Page Container -->
+  </div>
+          
+        
+        
+        <div class="footer container-fluid">
+
+            <h1 class="footer-header">Daeron Jones</h1>
+
+            <div class="footer-group">
+                <div>
+                    <h3 class="nav-foot-title">Contact</h3>
+
+                    <a class="footer-link" href="mailto:daeronjones@gmail.com" target="_blank"> daeronjones@gmail.com</a>
+
+                    <br>
+                    
+                    <a class="footer-link"  href="tel:+17164248085" target="_blank"> 1+ 716-424-8085</a>
+                    
+                </div>
+        
+                <br>
+
+                <div>
+                    <h3 class="nav-foot-title">Location</h3>
+
+                    <a class="footer-link"  href="http://www.facebook.com" target="_blank">Western, NY 14215</a>
+                    
+                </div>
+            </div>
+
+            <br>
+
+            <ul class="nav-icons">
+                
+                <a class="footer-link"  href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+    
+                <a class="footer-link" href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+    
+                <a class="footer-link" href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    
+                <a class="footer-link" href="http://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </ul>
+        </div>
+
+        
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+        
+    </body>
+</html>

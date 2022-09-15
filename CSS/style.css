@@ -85,6 +85,7 @@ h1.footer-header{
     font-size: 5vw;
     margin:1em;
     margin-top: 0%;
+    margin-bottom: 2em;
     text-align: center !important;    
     color:#fff;
 }
@@ -322,6 +323,8 @@ div.card {
     
 }
 
+
+
 /* Accordion */
 .accordion {
     background-color: #cccbcb;
@@ -337,6 +340,8 @@ div.card {
     border-radius: .5em;
     box-shadow: 2px 2px 5px 2px #000000, -1px -1px 2px 1px #ffffff;
     margin:.2em;
+    border-style:double;
+
    
 }
 
@@ -390,7 +395,7 @@ border-radius: .5em;
 .form-label{
 font-size:1.25em !important;
 
-color:#cccbcb;
+color:#ffffff;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 
 
@@ -459,6 +464,15 @@ font-family: 'Ubuntu', sans-serif;
         font-size: 2vw;
    
     }
+
+    p.accordion-text{
+        font-size: 3vw !important;
+
+    }
+
+    .w3-btn{
+        font-size: 1.5vw !important;
+    }
 }
 
 @media screen and (min-width: 700px) {
@@ -478,6 +492,11 @@ font-family: 'Ubuntu', sans-serif;
     #myBtn{
         font-size: 1.5vw;
    
+    }
+
+    p.accordion-text{
+        font-size: 2vw !important;
+
     }
 
 }
@@ -522,6 +541,24 @@ font-family: 'Ubuntu', sans-serif;
     div.card{
         width:30%;
        
+    }
+
+    .w3-btn{
+        font-size: 1vw !important;
+    }
+}
+
+
+/* Extra Large Screens */
+@media screen and (min-width: 1500px) {
+    
+    .form-overlay .closebtn{
+        top:2.7em;
+    }
+
+    p.accordion-text{
+        font-size: 1vw !important;
+
     }
 }
 
