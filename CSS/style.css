@@ -1,9 +1,10 @@
 body, html {
-    height: 100%;
+   
     background-color: #cccbcb !important;
     box-sizing: border-box;
     /* background-image: linear-gradient(#045E21, #F29200, #BD1522) */
-
+    
+    
 }
 
 *, *:before, *:after {
@@ -134,11 +135,27 @@ h1.footer-text{
     color: #000000;
 }
 
+.parallax {
+    /* The image used */
+    background-image: url('../IMG/dominique_+_daeron-05053-removebg-preview.png');
+  
+    /* Full height */
+    height: 100%; 
+    max-width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+   margin-top: 6em;
+  }
+
 .flex-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-top:10%;
+    /* margin-top:10%; */
 
 }
 
@@ -312,13 +329,14 @@ div.nav-card {
 }
 
 div.card {
-    background: #cccbcb;
+    background: #cccbcbe7;
     min-height: 350px;
     max-height: fit-content;
     padding: 1em;
     box-shadow: 0px 0px 2px 0px #ffffff;
     margin:1em;
     /* width:100% !important; */
+    
     
     
 }
@@ -473,6 +491,24 @@ font-family: 'Ubuntu', sans-serif;
     .w3-btn{
         font-size: 1.5vw !important;
     }
+
+    .parallax {
+        /* The image used */
+        background-image: url('../IMG/dominique_+_daeron-04448-removebg-preview.png');
+      
+        /* Full height */
+        height: auto; 
+        max-width: 100%;
+    
+        /* Create the parallax scrolling effect */
+        background-attachment:scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:c;
+      }
+      
+
+   
 }
 
 @media screen and (min-width: 700px) {
@@ -532,6 +568,22 @@ font-family: 'Ubuntu', sans-serif;
         font-size: 1vw;
    
     }
+
+      .parallax {
+        /* The image used */
+        background-image: url('../IMg/dominique_+_daeron-03856-removebg-preview.png');
+      
+        /* Full height */
+        height: 100%; 
+        max-width: 100%;
+    
+        /* Create the parallax scrolling effect */
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+        
+      }
 
 }
 

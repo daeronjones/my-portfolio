@@ -63,3 +63,23 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+
+
+
+
+
+
+// Typeweriter
+const i = 0;
+const txt = document.getElementById("cardTitle");
+const speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("cardTitle").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
