@@ -16,10 +16,25 @@ body, html {
     place-items: center;
 } */
 
-nav{
-    background-color: #3f3f3ff3;
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 a{
     font-family: Verdana, sans-serif;
@@ -53,12 +68,6 @@ p.accordion-text{
 
 }
 
-h3.nav-foot-title{
-    font-family: Verdana, sans-serif;
-    color: #a0da8ec0;
-    
-}
-
 h1.flex{
     text-align: center;
     padding: .2em;
@@ -81,23 +90,6 @@ h1.header{
 
 }
 
-h1.footer-header{
-    font-family: 'Holtwood One SC', serif;
-    font-size: 5vw;
-    margin:1em;
-    margin-top: 0%;
-    margin-bottom: 2em;
-    text-align: center !important;    
-    color:#fff;
-}
-
-
-h1.footer-text{
-    font-size:xx-large !important;
-    font-weight: bolder;
-    text-align: center;
-
-}
 
 #myBtn {
     display: none;
@@ -163,6 +155,20 @@ h1.footer-text{
 
 }
 
+div.card {
+    background: #cccbcbe7;
+    min-height: 350px;
+    max-height: fit-content;
+    padding: 1em;
+    box-shadow: 0px 0px 2px 0px #ffffff;
+    margin:4em 1em 4em 1em;
+    
+}
+
+div.card-c{
+    margin-top: 20%;
+}
+
 .jumbotron {
     display:flex !important;
     flex-direction: column;
@@ -180,6 +186,26 @@ h1.footer-text{
     text-align: center;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .nav-link{
     padding:0em 3em !important;
 }
@@ -192,7 +218,8 @@ h1.footer-text{
 .navbar-brand{
     margin-right: 0 !important;
     font-family: 'Holtwood One SC', serif;
-    font-size: 5vw !important;
+    font-size: 2em !important;
+    padding:0;
 
 }
 
@@ -213,6 +240,36 @@ h1.footer-text{
     color: rgb(23, 224, 1) !important;
 }
 
+h3.nav-foot-title{
+    font-family: Verdana, sans-serif;
+    color: #a0da8ec0;
+    margin:0;
+}
+
+nav{
+    background-color: #3f3f3ff3;
+
+}
+
+div.nav-title{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    align-self: flex-start;
+
+}
+
+div.nav-card {
+    min-height: 50%;
+    max-height: fit-content;
+    min-width:15%;
+    max-width:fit-content;
+    padding: 1em;
+    /* box-shadow: -1px -1px 20px 0px #ffffff; */
+    margin:1em;
+    
+    
+}
 
 
 
@@ -317,39 +374,87 @@ h1.footer-text{
 
 
 
-div.nav-title{
-    display: flex;
-    flex-flow: column wrap;
-    text-align: center;
-    align-self: flex-start;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    display: flex;
+    justify-content:space-evenly;
+    background-color:#3f3f3ff3;
+    color: #cccbcb;
+    flex-direction: column;
+    padding:1em;
+    box-shadow: -1px -1px 20px 0px #ffffff;
+    margin-top: 2em;
+    
 }
 
-div.nav-card {
-    min-height: 50%;
-    max-height: fit-content;
-    min-width:15%;
-    max-width:fit-content;
-    padding: 1em;
-    /* box-shadow: -1px -1px 20px 0px #ffffff; */
+.footer-item {
+    background: #BCBFA3;
+    border-style:double;
+    border-color: #E8D3A9;
+    border-radius: .25em;
+    color: #6e6460;
+    box-shadow: 2px 2px 5px 2px #000000, -1px -1px 2px 1px #ffffff;
     margin:1em;
     
-    
 }
 
-div.card {
-    background: #cccbcbe7;
-    min-height: 350px;
-    max-height: fit-content;
-    padding: 1em;
-    box-shadow: 0px 0px 2px 0px #ffffff;
-    margin:4em 1em 4em 1em;
-    
+.footer-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-div.card-c{
-    margin-top: 20%;
+h1.footer-header{
+    font-family: 'Holtwood One SC', serif;
+    font-size: 5vw;
+    margin:1em;
+    margin-top: 0%;
+    margin-bottom: 2em;
+    text-align: center !important;    
+    color:#fff;
 }
+
+
+h1.footer-text{
+    font-size:xx-large !important;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Accordion */
 .accordion {
@@ -370,7 +475,6 @@ div.card-c{
 
    
 }
-
 
 .contactButton {
     background-color: #cccbcb;
@@ -417,6 +521,26 @@ margin: 1em 0em;
 border-radius: .5em;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Form styling */
 .form-label{
 font-size:1.25em !important;
@@ -433,35 +557,6 @@ font-family: 'Ubuntu', sans-serif;
 
 }
 
-
-.footer {
-    display: flex;
-    justify-content:space-evenly;
-    background-color:#3f3f3ff3;
-    color: #cccbcb;
-    flex-direction: column;
-    padding:1em;
-    box-shadow: -1px -1px 20px 0px #ffffff;
-    margin-top: 2em;
-    
-}
-
-.footer-item {
-    background: #BCBFA3;
-    border-style:double;
-    border-color: #E8D3A9;
-    border-radius: .25em;
-    color: #6e6460;
-    box-shadow: 2px 2px 5px 2px #000000, -1px -1px 2px 1px #ffffff;
-    margin:1em;
-    
-}
-
-.footer-group{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
 
 
 
