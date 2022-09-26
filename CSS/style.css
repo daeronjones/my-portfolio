@@ -64,13 +64,13 @@ a:hover, a.header-link:hover, a.footer-link:hover {
 p.accordion-text{
     font-family: Verdana, sans-serif;
     color: #cbcccb;
-    font-size: 4vw;
+    font-size: 1em;
 
 }
 
 h1.flex{
     text-align: center;
-    padding: .2em;
+    /* padding: .1em; */
     margin: 1em 1em;
     font-size: 1.5em;
     font-family: Verdana, sans-serif;
@@ -465,7 +465,7 @@ h1.footer-text{
     align-self: center;
     text-align: center;
     outline: none;
-    font-size: 1.5em;
+    font-size: 1.1em;
     transition: 0.4s;
     border-color: #a0da8ec0;
     border-radius: .5em;
@@ -484,7 +484,7 @@ h1.footer-text{
     align-self: center;
     text-align: center;
     outline: none;
-    font-size: 5vw;
+    font-size: 1.1em;
     transition: 0.4s;
     border-style:double;
     border-color: #a0da8ec0;
@@ -581,7 +581,7 @@ font-family: 'Ubuntu', sans-serif;
 @media screen and (min-width: 500px) {
     
    div.card{
-    width:44%;
+    width:43%;
    }
 
    .flex-container {
@@ -598,18 +598,13 @@ font-family: 'Ubuntu', sans-serif;
     }
 
     .accordion, .contactButton{
-        font-size: 1.2em;
+        font-size: 1.1em;
         padding:1rem 2rem;
     }
 
     #myBtn{
         font-size: 2vw;
    
-    }
-
-    p.accordion-text{
-        font-size: 3vw !important;
-
     }
 
     .w3-btn{
@@ -654,11 +649,6 @@ font-family: 'Ubuntu', sans-serif;
    
     }
 
-    p.accordion-text{
-        font-size: 2vw !important;
-
-    }
-
 }
   
 /* Large Screens */
@@ -673,7 +663,7 @@ font-family: 'Ubuntu', sans-serif;
     } 
 
     .accordion, .contactButton{
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     h1.flex{
@@ -729,7 +719,7 @@ font-family: 'Ubuntu', sans-serif;
     }
 
     p.accordion-text{
-        font-size: 1vw !important;
+        font-size: 1.2em !important;
 
     }
 }
