@@ -167,6 +167,8 @@ div.card {
 
 div.card-c{
     margin-top: 20%;
+    /* margin-bottom: 50%; */
+
 }
 
 .jumbotron {
@@ -291,7 +293,7 @@ div.nav-card {
     background-color: rgb(0,0,0); /* Black fallback color */
     background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    transition: 1s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   }
 
   .form-overlay {
@@ -305,7 +307,7 @@ div.nav-card {
     background-color: rgb(0,0,0); /* Black fallback color */
     background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    transition: 1s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
     
   }
   
@@ -348,9 +350,9 @@ div.nav-card {
   /* Position the close button (top right corner) */
   .overlay .closebtn, .form-overlay .closebtn {
     position: absolute;
-    top: .1em;
+    top: 0em;
     right: .1em;
-    font-size: 5em;
+    font-size: 3em;
   }
 
 
