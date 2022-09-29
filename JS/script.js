@@ -73,7 +73,7 @@ function topFunction() {
 
 // Typeweriter
 const i = 0;
-const txt = document.getElementById("cardTitle");
+const txt = "hi";
 const speed = 50;
 
 function typeWriter() {
